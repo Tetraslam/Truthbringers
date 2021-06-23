@@ -4,13 +4,9 @@ from rich.console import Console
 from rich.text import Text
 import time
 import os
-os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
-import pygame
-from pygame import mixer
 from time import sleep
 from rich.progress import Progress
 import questionary
-import winsound
 from tetraslam import tetra
 from just_playback import Playback
 #lmao
@@ -99,7 +95,7 @@ def Encryption(data):
 def intro():
     #WORK ON THIS PART
     csprint("\n\n[yellow1]THE TRUTHBRINGERS  :grinning: ", 0)
-    intromusic="C:\Users\conta\Music\intro.mp3"
+    intromusic=r"C:\\Users\\conta\\Music\\intro.mp3"
     music.play(intromusic)
     csprint("\n\n[bright_cyan]1. Start new game", 0.02)
     csprint("\n\n[bright_cyan]2. Log in", 0.02)
@@ -114,7 +110,8 @@ def whee():
 def tutorial():
     music.stop()
     tetra.z()
-    music.play("C:\Users\conta\Music\tutorial.mp3")
+    tutorialmusic=r"C:\\Users\\conta\\Music\\tutorial.mp3"
+    music.play(tutorialmusic)
     csprint("\n\n[bright_cyan]Welcome to Ayro-Ni (pronounced AH-EE-ROH-NEE), newly born subject of the Flaming Hot One, his divine flameness, the God of Fire, the Everflame himself, Skald!", 0.03)
     time.sleep(0.8)
     csprint("\n\n[bright_cyan]In Ayro-Ni, it is the duty of every citizen to choose a Fealty, a Purpose and an Aspiration.", 0.03)
