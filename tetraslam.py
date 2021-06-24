@@ -14,7 +14,30 @@ from cryptography.fernet import Fernet
 from questionary import Style
 
 class tetra:
-    """A class to make CLI application creation easier!"""
+    """A class to make CLI application creation easier!
+    
+    Functions:
+
+    1. csprint(printtext, speed=0)
+
+    2. z(optional_time=2)
+
+    3. asktext(text) 
+    
+    4. askpassword(text)
+
+    5. askfilepath(text)
+
+    6. askconfirmation(text)
+
+    7. askoneoption(text, listofoptions, usepointer=False)
+
+    8. askcheckbox(text, listofoptions, usepointer)
+
+    9. askautocomplete(text, listofoptions)
+
+    10. raiseError(error, message)
+    """
     def csprint(printtext, speed=0):
         """Print with styling! For example, use `csprint("[bright_cyan][i]hello there", 0.05)` and see the output!"""
         if speed==0:
