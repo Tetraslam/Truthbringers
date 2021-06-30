@@ -9,7 +9,6 @@ from rich.progress import Progress
 import questionary
 from tetraslam import tetra
 from just_playback import Playback
-#lmao
 # csprint, z, asktext, askpassword, askfilepath, askconfirmation, askoneoption, askcheckbox, askautocomplete, raiseError
 #---------------------------------------------------------CONSOLES---------------------------------------------------
 console=Console()
