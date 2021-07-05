@@ -101,7 +101,11 @@ def intro():
     csprint("\n\n[bright_cyan]3. Options", 0.02)
     csprint("\n\n[bright_cyan]4. Credits", 0.02)
     csprint("\n\n[bright_cyan]5. Exit", 0.02)
-    
+
+def saveAndExit(checkpoint):
+    p=open("savefile.txt", "w")
+    return p.write(str(checkpoint))
+
 user_input=0
 def whee():
     csprint("[bright_cyan]\n\n>>>", 0)
@@ -146,7 +150,7 @@ def Chapter1():
     wait()
     csprint("[red3]\nYou wake up in a small wooden house, wiping the sleep from your curiously grey eyes, and look at yourself on the large mirror opposite your bed with a slightly rusted edge. You are around 12 [i]reshya[/i] tall. Then it all comes back to you...", 0)
     csprint("[red3]\nYou are a trainee in the Shrine of Skald. The small clock above the mirror tells you that the time is 0620, or 6 hours and twenty minutes into the day.", 0)
-    tetra.askoneoption("What do you want to do?", ["Get up from the bed and get ready for training", "Exit game"])
+    tetra.askoneoption("What do you want to do?", ["Get up from the bed and get ready for training", "Look around", "Save and exit" ])
     file.close()
 #---------------------------------------------------------INTRO------------------------------------------
 
