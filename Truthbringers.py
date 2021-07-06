@@ -150,7 +150,7 @@ def Chapter1():
     wait()
     csprint("[red3]\nYou wake up in a small wooden house, wiping the sleep from your curiously grey eyes, and look at yourself on the large mirror opposite your bed with a slightly rusted edge. You are around 12 [i]reshya[/i] tall. Then it all comes back to you...", 0)
     csprint("[red3]\nYou are a trainee in the Shrine of Skald. The small clock above the mirror tells you that the time is 0620, or 6 hours and twenty minutes into the day.", 0)
-    tetra.askoneoption("What do you want to do?", ["Get up from the bed and get ready for training", "Look around", "Save and exit" ])
+    tetra.askoneoption("What do you want to do?", ["Get up from the bed and get ready for training", "Stay in bed", "Save and exit" ])
     file.close()
 #---------------------------------------------------------INTRO------------------------------------------
 
